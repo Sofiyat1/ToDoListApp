@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo list</title>
+    <link rel="stylesheet" href="../css/todo.css" />
+  </head>
+  <body>
+    
+    <div class="todoWrapper">
+      <h1>My To Do List</h1>
+      <form id="form" class="todoForm" onsubmit="newElement(event)">
+        <label for="addTodo">
+          <input
+            type="text"
+            name="addTodo"
+            id="addTodo"
+            placeholder="Add your Task..."
+          />
+          <button onclick="newElement(event)" class="addButton">ADD</button>
+        </label>
+      </form>
+      <ul id="todoList">
+        <li>Hit the gym</li>
+        <li class="checked">Pay bills</li>
+        <li>Meet George</li>
+        <li>Buy eggs</li>
+        <li>Read a book</li>
+        <li>Organize office</li>
+      </ul>
+    </div>
+    <script src="../javascript/todo.js"></script>
+  </body>
+</html>
