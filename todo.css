@@ -254,10 +254,14 @@ ul li.checked::before{
     margin: 0;
   }
   
-  #image{
+  #image1{
     height: auto;
     width: 80px;
-    animation: rotateAnimation 3s linear infinite;
+  }
+
+  #image2{
+    height: auto;
+    width: 80px;
   }
 
 
@@ -302,7 +306,6 @@ ul li.checked::before{
     line-height: 15px;
     width: 35%;
     padding-right: 10px;
-    box-shadow: 0 4px 8px rgba(128, 128, 128, 0.5);
   }
   
 }
