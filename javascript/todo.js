@@ -69,6 +69,7 @@ function newElement(event) {
   } else {
     document.getElementById("todoList").appendChild(li);
   }
+  
   document.getElementById("addTodo").value = "";
 
   //Animation
@@ -95,11 +96,4 @@ function newElement(event) {
     var div = this.parentElement.parentElement;
     div.style.display = "none";
   };
- 
-  for (i = 0; i < close.length; i++) {
-    close[i].onclick = function () {
-      var div = this.parentElement;
-      div.style.display = "none";
-    };
-  }
 }
