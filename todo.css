@@ -26,13 +26,13 @@ body{
   padding: 0;
 }
 
-#image{
+#image2{
   height: auto;
   width: 130px;
-  animation: rotateAnimation 3s linear infinite;
+  animation: rotateAnimation2 3s linear infinite;
 }
 
-@keyframes rotateAnimation {
+@keyframes rotateAnimation2 {
   0% {
     transform: rotate(0deg);
     filter: contrast(0deg);
@@ -47,6 +47,26 @@ body{
   }
 }
 
+#image1{
+  height: auto;
+  width: 130px;
+  animation: rotateAnimation1 3s linear infinite;
+}
+
+@keyframes rotateAnimation1 {
+  0% {
+    transform: rotate(0deg);
+    filter: contrast(0deg);
+  }
+  50% {
+    transform: rotate(-180deg); /* Rotate halfway */
+    filter: hue-rotate(-180deg); /* Change color at 50% */
+  }
+  100% {
+    transform: rotate(-360deg);
+    filter: hue-rotate(-360deg); /* Return to the original color at 100% */
+  }
+}
 
 .addButton{
   background-color: #000;
