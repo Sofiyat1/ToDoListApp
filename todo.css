@@ -4,13 +4,49 @@ body{
 
 .todoWrapper{
   max-width: 700px;
-  margin: 30px auto;
+  margin: 20px auto;
 }
 
-.todoWrapper h1{
+.header{
+  position: relative;
+  left: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+}
+
+.header h1{
   text-align: center;
   font-weight: 900;
+  margin: auto;
 }
+
+.image{
+  padding: 0;
+}
+
+#image{
+  height: auto;
+  width: 130px;
+  animation: rotateAnimation 3s linear infinite;
+}
+
+@keyframes rotateAnimation {
+  0% {
+    transform: rotate(0deg);
+    filter: contrast(0deg);
+  }
+  50% {
+    transform: rotate(180deg); /* Rotate halfway */
+    filter: hue-rotate(180deg); /* Change color at 50% */
+  }
+  100% {
+    transform: rotate(360deg);
+    filter: hue-rotate(360deg); /* Return to the original color at 100% */
+  }
+}
+
 
 .addButton{
   background-color: #000;
@@ -121,9 +157,8 @@ ul li.checked::before{
   cursor: pointer;
   color: inherit;
   border: none;
-  font-size: 1em;
-  font-weight: 900;
-  line-height: 25px;
+  font-size: .8em;
+  font-weight: 700;
   transition: 0.3s;
 }
 
@@ -132,6 +167,7 @@ ul li.checked::before{
   color: #fcd5b0;
   border-radius: 20px;
 }
+
 
 @keyframes bounce-in {
   0%{
@@ -223,7 +259,6 @@ ul li.checked::before{
   }
 
   .remove{
-    font-size: 12px;
     line-height: 15px;
     width: 35%;
     padding-right: 10px;

@@ -44,7 +44,7 @@ list.addEventListener(
 );
 
 //Uncheck all items when the page is clicked outside the todo parent
-document.addEventListener("click", function (event) {
+/*document.addEventListener("click", function (event) {
     var todoList = document.getElementById("todoList");
   
     // Check if the clicked element is not a descendant of the todo list
@@ -55,7 +55,7 @@ document.addEventListener("click", function (event) {
         listItems[i].classList.remove("checked");
       }
     }
-  })
+  })*/
 
 // Create a new list item when clicking on the "Add" button
 function newElement(event) {
