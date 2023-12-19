@@ -241,7 +241,6 @@ ul li.checked::before{
     margin: 0;
     left: 12px;
     width: 90%;
-    border: 1px solid black;
   }
   
   .header h1{
